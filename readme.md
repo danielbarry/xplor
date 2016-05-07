@@ -45,7 +45,7 @@ parts should be built.
 To run the program, simply navigate to the `dist` directory that will appear
 after a successful build. Next, you can run the following:
 
-    java -jar xplor
+    java -jar xplor.jar
 
 This will start the program with the basic settings, by default a GUI should
 appear.
