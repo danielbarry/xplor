@@ -13,6 +13,9 @@ import joint.xplor.sim.ctrl.Controller;
  * safe for any information it discloses publicly.
  **/
 public class Simulation implements Runnable{
+  private Environment environment;
+  private Controller[] controllers;
+
   /**
    * Simulation()
    *
@@ -26,6 +29,9 @@ public class Simulation implements Runnable{
    * experiment.
    **/
   public Simulation(Environment env, Controller[] ctrls){
+    /* Store values */
+    environment = env;
+    controllers = ctrls;
     /* Start and run simulation thread */
     new Thread(this).start();
   }
