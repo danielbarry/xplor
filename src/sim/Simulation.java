@@ -1,5 +1,6 @@
 package joint.xplor.sim;
 
+import joint.xplor.log.Log;
 import joint.xplor.sim.env.Environment;
 import joint.xplor.sim.ctrl.Controller;
 
@@ -36,5 +37,6 @@ public class Simulation implements Runnable{
   @Override
   public void run(){
     /* TODO: Write the simulation loop. */
+    Log.dbg("Hello from a new Thread"); // TODO: Remove me.
   }
 }
