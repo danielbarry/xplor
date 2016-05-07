@@ -26,7 +26,8 @@ public class Simulation implements Runnable{
    * experiment.
    **/
   public Simulation(Environment env, Controller[] ctrls){
-    /* TODO: Write this code. */
+    /* Start and run simulation thread */
+    new Thread(this).start();
   }
 
   /**
