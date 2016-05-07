@@ -1,6 +1,8 @@
 package joint.xplor;
 
 import joint.xplor.log.Log;
+import joint.xplor.gui.GUI;
+import javax.swing.SwingUtilities;
 
 /**
  * Main.java
@@ -22,5 +24,14 @@ public class Main{
   public static void main(String[] args){
     /* TODO: Write this section. */
     Log.dbg("Program started.");
+
+    /* TODO: GUI will need a reference to logic */
+    GUI gui = new GUI(null);
+    try{
+      SwingUtilities.invokeLater((Runnable) gui);
+    }catch (Exception ex){
+      System.out.println("Failed to launch GUI. " + ex.getMessage());
+    }
+
   }
 }
