@@ -11,7 +11,7 @@ import joint.xplor.sim.ctrl.Controller;
  * Requests are likely to be from other threads so this class must be thread
  * safe for any information it discloses publicly.
  **/
-public class Simulation{
+public class Simulation implements Runnable{
   /**
    * Simulation()
    *
@@ -26,5 +26,15 @@ public class Simulation{
    **/
   public Simulation(Environment env, Controller[] ctrls){
     /* TODO: Write this code. */
+  }
+
+  /**
+   * run()
+   *
+   * The main thread for the simulation.
+   **/
+  @Override
+  public void run(){
+    /* TODO: Write the simulation loop. */
   }
 }
