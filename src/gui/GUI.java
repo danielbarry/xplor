@@ -24,7 +24,7 @@ public class GUI implements Runnable{
   private Simulation sim;
 
   private final JFrame window;
-  //private final Draw drawPnl;
+  private final Draw drawPnl;
   private final JMenuBar topMBr;
   private final JMenu fileMnu; 
   private final JMenu viewMnu;
@@ -55,6 +55,7 @@ public class GUI implements Runnable{
    **/
   public GUI(Simulation sim){
     this.sim = sim;
+    this.drawPnl = new Draw(sim);
 
     /* Setup the window */
     window = new JFrame(NAME_STR);
@@ -78,7 +79,7 @@ public class GUI implements Runnable{
 
     /* Add components to window*/
     window.setJMenuBar(topMBr);
-    //window.add(drawPnl, BorderLayout.CENTER);
+    window.add(drawPnl, BorderLayout.CENTER);
 
     window.setVisible(true);
   }
