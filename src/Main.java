@@ -1,5 +1,7 @@
 package joint.xplor;
 
+import joint.xplor.log.Log;
+
 /**
  * Main.java
  *
@@ -19,6 +21,6 @@ public class Main{
    **/
   public static void main(String[] args){
     /* TODO: Write this section. */
-    System.out.println("Program was started.");
+    Log.dbg("Program started.");
   }
 }
