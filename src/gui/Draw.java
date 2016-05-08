@@ -15,7 +15,6 @@ import java.awt.Graphics;
  * with other components.
  **/
 public class Draw extends JPanel{
-  
   private Simulation sim;
 
   /**
