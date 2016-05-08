@@ -75,7 +75,7 @@ public class GUI implements Runnable{
     topMBr.add(fileMnu);
     topMBr.add(viewMnu);
 
-    /* Add components to window*/
+    /* Add components to window */
     window.setJMenuBar(topMBr);
     window.add(drawPnl, BorderLayout.CENTER); 
   }
