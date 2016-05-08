@@ -2,7 +2,6 @@ package joint.xplor;
 
 import joint.xplor.log.Log;
 import joint.xplor.gui.GUI;
-import javax.swing.SwingUtilities;
 
 /**
  * Main.java
