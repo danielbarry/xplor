@@ -78,6 +78,18 @@ public class GUI implements Runnable{
     /* Add components to window */
     window.setJMenuBar(topMBr);
     window.add(drawPnl, BorderLayout.CENTER);
+
+    /* Add listeners to menu items */
+    for(JMenuItem mi : new JMenuItem[]{openItm, exitItm, aboutItm}){
+      mi.addActionListener(
+        new ActionListener(){
+          @Override
+          public void actionPerformed(ActionEvent e){
+            menuCallback(mi.getText(), e);
+          }
+        }
+      );
+    }
   }
 
   /* TODO: Comment this code. */
