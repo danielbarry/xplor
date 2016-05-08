@@ -7,5 +7,6 @@ package joint.xplor.sim.ctrl;
  * with.
  **/
 public interface Controller{
-  /* TODO: Write this code. */
+  public Move getMove(byte[] input);
+  public byte[] getKnowledge();
 }
