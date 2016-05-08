@@ -23,15 +23,14 @@ public class Main{
    **/
   public static void main(String[] args){
     /* TODO: Write this section. */
-    Log.dbg("Program started.");
+    Log.dbg("Program started");
 
     /* TODO: GUI will need a reference to logic */
     GUI gui = new GUI(null);
     try{
-      SwingUtilities.invokeLater((Runnable) gui);
-    }catch (Exception ex){
-      System.out.println("Failed to launch GUI. " + ex.getMessage());
+      gui.show();
+    }catch(Exception ex){
+      Log.err("Failed to start GUI");
     }
-
   }
 }

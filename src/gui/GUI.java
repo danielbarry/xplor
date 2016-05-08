@@ -6,6 +6,7 @@ import java.awt.BorderLayout;
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
+import javax.swing.SwingUtilities;
 
 /**
  * GUI.java
@@ -79,12 +80,14 @@ public class GUI implements Runnable{
 
     /* Add components to window*/
     window.setJMenuBar(topMBr);
-    window.add(drawPnl, BorderLayout.CENTER);
+    window.add(drawPnl, BorderLayout.CENTER); 
+  }
 
+  public void show() throws Exception {
+    SwingUtilities.invokeLater((Runnable) this);
     window.setVisible(true);
   }
 
   @Override
   public void run(){}
-
 }
