@@ -38,7 +38,8 @@ done by running the following in the build directory:
     ant
 
 It's as simple as that. If we have done our job correctly then a series of
-parts should be built.
+parts should be built. If any errors are found with the build process, please
+raise a ticket on the repository.
 
 ## (3) Program Use
 
