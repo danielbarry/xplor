@@ -84,7 +84,7 @@ public class GUI implements Runnable{
     window.add(drawPnl, BorderLayout.CENTER); 
   }
 
-  public void show() throws Exception {
+  public void show() throws Exception{
     SwingUtilities.invokeLater((Runnable) this);
     window.setVisible(true);
   }
