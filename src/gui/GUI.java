@@ -24,7 +24,6 @@ import javax.swing.SwingUtilities;
  * simulation should run effectively if this class was to be removed.
  **/
 public class GUI implements Runnable{
-  
   private Simulation sim;
 
   private final JFrame window;
