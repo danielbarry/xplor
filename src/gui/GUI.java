@@ -1,5 +1,6 @@
 package joint.xplor.gui;
 
+import joint.xplor.log.Log;
 import joint.xplor.sim.Simulation;
 import javax.swing.JFrame;
 import java.awt.BorderLayout;
@@ -90,4 +91,18 @@ public class GUI implements Runnable{
 
   @Override
   public void run(){}
+
+  /**
+   * menuCallback()
+   *
+   * This method is responsible for handling the callback from events on the
+   * menu for the GUI.
+   *
+   * @param s The identifier for the callback.
+   * @param e The event that occurred to trigger the event.
+   **/
+  private void menuCallback(String s, ActionEvent e){
+    /* TODO: Handle menu callback. */
+    Log.dbg("Menu item clicked -> " + s); // TODO: Remove this line.
+  }
 }
