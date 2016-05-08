@@ -30,6 +30,7 @@ public class Draw extends JPanel{
     this.sim = sim;
   }
 
+  /* TODO: Comment this. */
   @Override
   public void paintComponent(Graphics g){
     super.paintComponent(g);
@@ -40,6 +41,7 @@ public class Draw extends JPanel{
 
   }
 
+  /* TODO: Comment this. */
   public void setSim(Simulation sim){
     this.sim = sim;
   }
