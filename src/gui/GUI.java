@@ -29,12 +29,6 @@ public class GUI implements Runnable{
 
   private final JFrame window;
   private final Draw drawPnl;
-  private final JMenuBar topMBr;
-  private final JMenu fileMnu; 
-  private final JMenu viewMnu;
-  private final JMenuItem openItm;
-  private final JMenuItem aboutItm;
-  private final JMenuItem exitItm;
 
   /* TODO: Migrate to a config file. */
   private final static int SIZE_X = 800;
@@ -69,12 +63,12 @@ public class GUI implements Runnable{
     window.setLayout(new BorderLayout());
 
     /* Setup menu bar */
-    topMBr = new JMenuBar();
-    fileMnu = new JMenu(FILE_STR);
-    viewMnu = new JMenu(VIEW_STR);
-    openItm = new JMenuItem(OPEN_STR);
-    aboutItm = new JMenuItem(ABOUT_STR);
-    exitItm = new JMenuItem(EXIT_STR);
+    JMenuBar topMBr = new JMenuBar();
+    JMenu fileMnu = new JMenu(FILE_STR);
+    JMenu viewMnu = new JMenu(VIEW_STR);
+    JMenuItem openItm = new JMenuItem(OPEN_STR);
+    JMenuItem aboutItm = new JMenuItem(ABOUT_STR);
+    JMenuItem exitItm = new JMenuItem(EXIT_STR);
     fileMnu.add(openItm);
     fileMnu.add(exitItm);
     viewMnu.add(aboutItm);
