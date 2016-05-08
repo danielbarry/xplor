@@ -34,11 +34,8 @@ public class Draw extends JPanel{
   @Override
   public void paintComponent(Graphics g){
     super.paintComponent(g);
-
     this.setBackground(Color.BLACK);
-
     /* TODO: Using g paint the world in sim */
-
   }
 
   /* TODO: Comment this. */
