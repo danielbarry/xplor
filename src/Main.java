@@ -2,6 +2,10 @@ package joint.xplor;
 
 import joint.xplor.gui.GUI;
 import joint.xplor.log.Log;
+import joint.xplor.sim.Simulation;
+import joint.xplor.sim.ctrl.Controller;
+import joint.xplor.sim.ctrl.Rand;
+import joint.xplor.sim.env.Box;
 
 /**
  * Main.java
@@ -22,7 +26,14 @@ public class Main{
    **/
   public static void main(String[] args){
     /* TODO: Process command line inputs. */
-    GUI gui = new GUI(null);
+    GUI gui = new GUI(
+      new Simulation(
+        new Box(),
+        new Controller[]{
+          new Rand()
+        }
+      )
+    );
     try{
       gui.show();
     }catch(Exception ex){
