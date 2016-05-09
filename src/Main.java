@@ -1,7 +1,7 @@
 package joint.xplor;
 
-import joint.xplor.log.Log;
 import joint.xplor.gui.GUI;
+import joint.xplor.log.Log;
 
 /**
  * Main.java
