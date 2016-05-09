@@ -21,7 +21,7 @@ public class Main{
    * @param args The arguments given to this program from the command line.
    **/
   public static void main(String[] args){
-    /* TODO: GUI will need a reference to logic */
+    /* TODO: Process command line inputs. */
     GUI gui = new GUI(null);
     try{
       gui.show();
