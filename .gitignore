@@ -1,6 +1,7 @@
 # Single files
 
 # File extensions
+*.swp
 
 # Directories
 bin/**
