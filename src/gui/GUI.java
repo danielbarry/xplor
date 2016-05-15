@@ -91,16 +91,24 @@ public class GUI implements Runnable{
     }
   }
 
-  /* TODO: Comment this code. */
+  /**
+   * show()
+   * 
+   * Asks the system politely to launches and display the GUI.
+   * 
+   **/
   public void show() throws Exception{
     SwingUtilities.invokeLater((Runnable) this);
-    window.setVisible(true);
   }
 
-  /* TODO: Comment this code. */
+  /**
+   * run()
+   *
+   * Shows the GUI.
+   */
   @Override
   public void run(){
-    /* TODO: Write this code. */
+    window.setVisible(true);
   }
 
   /**
@@ -113,7 +121,19 @@ public class GUI implements Runnable{
    * @param e The event that occurred to trigger the event.
    **/
   private void menuCallback(String s, ActionEvent e){
-    /* TODO: Handle menu callback. */
+    /* Handle menu callback. */
     Log.dbg("Menu item clicked -> " + s); // TODO: Remove this line.
+    if (s.equals(OPEN_STR)){
+      /* TODO: Insert a method here to load a simulation */
+    } else if (s.equals(ABOUT_STR)){
+      /* TODO: Insert a method here to display about */
+    } else if (s.equals(EXIT_STR)){
+      exit();
+    }
+  }
+
+  private void exit(){
+    /* TODO: Add code to gracefully shutdown simulation */
+    System.exit(0);
   }
 }
