@@ -1,15 +1,15 @@
 package joint.xplor.gui;
 
-import joint.xplor.log.Log;
-import joint.xplor.sim.Simulation;
-import javax.swing.JFrame;
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.JFrame;
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 import javax.swing.SwingUtilities;
+import joint.xplor.log.Log;
+import joint.xplor.sim.Simulation;
 
 /**
  * GUI.java
