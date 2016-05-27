@@ -26,6 +26,7 @@ public class Main{
    **/
   public static void main(String[] args){
     /* TODO: Process command line inputs. */
+    /* Create GUI with properties */
     GUI gui = new GUI(
       new Simulation(
         new Box(),
@@ -34,6 +35,7 @@ public class Main{
         }
       )
     );
+    /* Attempt to run the GUI with the given controllers */
     try{
       gui.show();
     }catch(Exception ex){
