@@ -23,11 +23,11 @@ public class Draw extends JPanel{
    * This method is responsible for initialising the GUI class that wraps
    * around and serves the simulation.
    *
-   * @param sim The instance of the simulation to render.
-   * This value must not be NULL.
+   * @param s The instance of the simulation to render. This value must not be
+   * NULL.
    **/
-  public Draw(Simulation sim){
-    this.sim = sim;
+  public Draw(Simulation s){
+    sim = s;
   }
 
   /* TODO: Comment this. */
