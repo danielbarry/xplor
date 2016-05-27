@@ -43,9 +43,4 @@ public class Draw extends JPanel{
     this.setBackground(Color.BLACK);
     /* TODO: Using g paint the world in sim. */
   }
-
-  /* TODO: Comment this. */
-  public void setSim(Simulation sim){
-    this.sim = sim;
-  }
 }
