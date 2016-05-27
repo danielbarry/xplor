@@ -29,17 +29,17 @@ public class GUI implements Runnable{
   private final JFrame window;
   private final Draw drawPnl;
 
-  /* TODO: Migrate to a config file. */
-  private final static int SIZE_X = 800;
-  private final static int SIZE_Y = 600;
-
   /* TODO: Migrate to strings file. */
-  private static String NAME_STR = "Xplor";
-  private static String FILE_STR = "File";
-  private static String VIEW_STR = "View";
-  private static String OPEN_STR = "Open";
-  private static String ABOUT_STR = "About";
-  private static String EXIT_STR = "Exit";
+  private final static String NAME_STR = "Xplor";
+  private final static String FILE_STR = "File";
+  private final static String VIEW_STR = "View";
+  private final static String OPEN_STR = "Open";
+  private final static String ABOUT_STR = "About";
+  private final static String EXIT_STR = "Exit";
+
+  /* TODO: Migrate to a config file. */
+  private static int SIZE_X = 800;
+  private static int SIZE_Y = 600;
 
   /**
    * GUI()
