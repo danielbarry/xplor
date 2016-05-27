@@ -30,7 +30,13 @@ public class Draw extends JPanel{
     sim = s;
   }
 
-  /* TODO: Comment this. */
+  /**
+   * paintComponent()
+   *
+   * A simple method that controls the drawing of the display.
+   *
+   * @param g The graphics component to be drawn.
+   **/
   @Override
   public void paintComponent(Graphics g){
     super.paintComponent(g);
